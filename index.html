@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="contenedor">
+        <h1>Calculadora</h1>
+        
+        <div class="panel-izquierdo">
+            <div class="entradas">
+                
+                <div class="cuadro1">
+                    <label for="valor1">Numero 1</label>
+                    <input type="text" inputmode="numeric" id="valor1" placeholder="Numero 1">
+                </div>
+                
+                <div class="operador-actual" id="operador-actual">+</div>
+                
+                <div class="cuadro2">
+                    <label for="valor2">Numero 2</label>
+                    <input type="text" inputmode="numeric" id="valor2" placeholder="Numero 2">
+                </div>
+                
+            </div>
+            
+            <div class="resultado">
+                <div class="resultado-texto">Resultado:</div>
+                <div class="resultado-valor" id="resultado">-</div>
+            </div>
+        </div>
+        
+        <div class="botones">
+            <button data-operador="+">Suma</button>
+            <button data-operador="-">Resta</button>
+            <button data-operador="*">Multiplicación</button>
+            <button data-operador="/">División</button>
+            <button data-operador="%">Residuo</button>
+            <button data-operador="**">Potencia</button>
+        </div>
+    </div>
+
+    <script src="operaciones.js"></script>
+</body>
+</html>
